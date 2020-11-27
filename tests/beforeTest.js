@@ -4,7 +4,6 @@ const { execSync } = require('child_process');
 const { join } = require('path');
 const findChrome = require('carlo/lib/find_chrome');
 const detectInstaller = require('detect-installer');
-
 const installPuppeteer = () => {
   // find can use package manger
   const packages = detectInstaller(join(__dirname, '../../'));
