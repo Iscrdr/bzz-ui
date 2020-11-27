@@ -73,9 +73,6 @@ export default defineConfig({
                 },
               ]
             },
-           
-            
-           
             {
               component: './404',
             },
