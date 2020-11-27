@@ -7,7 +7,6 @@ const waitTime = (time: number = 100) => {
     }, time);
   });
 };
-
 async function getFakeCaptcha(req: Request, res: Response) {
   await waitTime(2000);
   return res.json('captcha-xxx');
