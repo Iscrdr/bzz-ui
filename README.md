@@ -46,6 +46,7 @@ $ npm start    # 访问 http://localhost:8000
 
      
 更多信息请参考 [使用文档](https://github.com/Iscrdr/bzz-ui/docs/getting-started)。
+```
 
 ## 支持环境
 
