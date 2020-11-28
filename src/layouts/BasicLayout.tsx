@@ -17,13 +17,39 @@ import RightContent from '@/components/GlobalHeader/RightContent';
 import { ConnectState } from '@/models/connect';
 import { getAuthorityFromRouter } from '@/utils/utils';
 import logo from '../assets/logo.svg';
-import { SmileOutlined, HeartOutlined,WindowsFilled,GithubOutlined } from '@ant-design/icons';
+import { SmileOutlined,
+  HeartOutlined,
+  ApartmentOutlined,
+  WindowsFilled,
+  GithubOutlined,
+  MenuOutlined,
+  SettingOutlined,
+  UserSwitchOutlined,
+  GroupOutlined,
+  SolutionOutlined,
+  LaptopOutlined,
+  ProfileOutlined,
+  OneToOneOutlined,
+  CodeOutlined
+} from '@ant-design/icons';
 
 
 const IconMap = {
-  smile: <SmileOutlined />,
-  heart: <HeartOutlined />,
-  windows: <WindowsFilled />,
+  smile: <SmileOutlined/>,
+  heart: <HeartOutlined/>,
+  windows: <WindowsFilled/>,
+  apartmentOutlined: <ApartmentOutlined/>,
+
+  menuOutlined: <MenuOutlined/>,
+  settingOutlined: <SettingOutlined/>,
+  userSwitchOutlined: <UserSwitchOutlined/>,
+  groupOutlined: <GroupOutlined/>,
+  solutionOutlined: <SolutionOutlined/>,
+  laptopOutlined: <LaptopOutlined/>,
+  oneToOneOutlined: <OneToOneOutlined/>,
+  profileOutlined: <ProfileOutlined/>,
+  codeOutlined: <CodeOutlined/>
+
 };
 const noMatch = (
   <Result
@@ -119,7 +145,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
         callback: (res:any) => {
           if (res) {
             // 请求完成后返回的结果
-          
+
             setMenuData(res || []);
           }
         }
@@ -154,7 +180,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
     <ProLayout
       logo={logo}
       formatMessage={formatMessage}
-     
+
       menuHeaderRender={(logoDom, titleDom) => (
         <Link to="/">
           {logoDom}

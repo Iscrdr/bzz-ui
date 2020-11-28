@@ -74,6 +74,19 @@ export default defineConfig({
               ]
             },
             {
+              path: '/code',
+              name: 'code',
+              icon: 'smile',
+              routes: [
+                {
+                  name: 'code',
+                  icon: 'smile',
+                  path: '/code/gen',
+                  component: './code/gen',
+                }
+              ]
+            },
+            {
               component: './404',
             },
           ],
